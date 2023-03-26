@@ -85,7 +85,7 @@ function Todo() {
                     <button
                       className="todo__dlt btn"
                       onClick={() => {
-                        handleDltTodo();
+                        handleDltTodo(index);
                       }}
                     >
                       Delete
