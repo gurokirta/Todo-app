@@ -1,0 +1,121 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Handlee&family=Zen+Dots&display=swap");
+/*
+font-family: 'Finger Paint', cursive; //? For Title
+font-family: 'Handlee', cursive; //* for ToDos
+font-family: 'Zen Dots', cursive; //! for Buttons
+*/
+
+// Fonts End
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(207, 95, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(207, 95, 186, 1) 0%,
+    rgba(67, 142, 143, 1) 100%
+  );
+}
+
+.main__container {
+  margin: 30px 20%;
+  border-radius: 15px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 13px;
+    font-weight: 400;
+    font-family: "Finger Paint", cursive;
+    font-size: 30px;
+    color: #ff7d1d;
+  }
+}
+
+.input__container {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    border-radius: 30px;
+    padding: 15px;
+    border: 1px solid #1dc124;
+    color: #1dc124;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: transparent;
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+  }
+}
+.inner__input__btn {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Zen Dots", cursive;
+  background-color: transparent;
+  color: white;
+  background-color: #1dc124;
+  border-radius: 50px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Zen Dots", cursive;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.main__container__todo--section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.todo__item {
+  list-style: none;
+  font-size: 30px;
+  color: #ff7d1d;
+  font-family: "Handlee", cursive;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  text-transform: capitalize;
+  &__btn__box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+.todo--section__buttons__box {
+  display: flex;
+  gap: 20px;
+}
+
+.todo__edit {
+  background-color: #ff7d1d;
+}
+
+.todo__dlt {
+  background-color: #f52e2e;
+}
